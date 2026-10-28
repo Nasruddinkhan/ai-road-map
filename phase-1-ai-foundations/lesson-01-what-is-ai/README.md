@@ -58,11 +58,11 @@ There are no wrong answers. The goal is to start spotting AI around you.
 
 | App | Where AI is used | Circle | Predicts or creates? |
 |---|---|---|---|
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
+| Google Maps | Traffic colours, arrival time (ETA) and fastest route | Deep learning | Predicts |
+| YouTube | "Up next" and home page recommendations | Deep learning (also ML) | Predicts |
+| Translator | Turning a sentence into another language | Deep learning / generative AI | Creates |
+| Chatbot (ChatGPT / Claude) | Writing brand-new answers to my questions | Generative AI | Creates |
+| Banking app | Spotting unusual spending (fraud alerts) | Machine learning | Predicts |
 
 ## Go deeper (free)
 
