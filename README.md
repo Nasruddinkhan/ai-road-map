@@ -11,7 +11,7 @@ One folder per phase, one sub-folder per lesson. Each lesson folder has a `READM
 | # | Lesson | Status |
 |---|---|---|
 | 1 | [What AI, machine learning, deep learning and generative AI are](phase-1-ai-foundations/lesson-01-what-is-ai/) | ✅ Done |
-| 2 | [How machines learn from data](phase-1-ai-foundations/lesson-02-how-machines-learn-from-data/) | ⏳ Upcoming |
+| 2 | [How machines learn from data](phase-1-ai-foundations/lesson-02-how-machines-learn-from-data/) | 📖 In progress |
 | 3 | [Using AI tools well: prompting basics](phase-1-ai-foundations/lesson-03-using-ai-tools-well-prompting-basics/) | ⏳ Upcoming |
 | 4 | [Better prompting: roles, examples, step-by-step, checking answers](phase-1-ai-foundations/lesson-04-better-prompting-roles-examples-step-by-step-check/) | ⏳ Upcoming |
 | 5 | [Getting set up: Google Colab and running your first cell](phase-1-ai-foundations/lesson-05-getting-set-up-google-colab-and-running-your-first/) | ⏳ Upcoming |
