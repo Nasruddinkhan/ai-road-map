@@ -77,12 +77,12 @@ Pick **one** everyday prediction task (ideas: "will it rain today?", "which vide
 
 | Question | My answer |
 |---|---|
-| Task | |
-| Features | |
-| Label | |
-| Where the examples come from | |
-| Classification or regression? | |
-| What could go wrong? | |
+| Task | Will it rain today? |
+| Features | Humidity, temperature, air pressure, cloud cover, wind speed/direction, month/season, whether it rained yesterday |
+| Label | Yes / No: did it actually rain that day? |
+| Where the examples come from | At least 5 years of daily records from weather stations / the weather department, stored in a database |
+| Classification or regression? | Classification (Yes/No). If I predicted *how much* rain falls (mm), that would be regression |
+| What could go wrong? | If data only covers summer months, or days are missing when sensors broke during storms, the model learns "it almost never rains" and misses real rainy days |
 
 ## Go deeper (free)
 
