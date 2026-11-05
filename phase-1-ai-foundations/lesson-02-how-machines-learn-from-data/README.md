@@ -73,16 +73,28 @@ Pick **one** everyday prediction task (ideas: "will it rain today?", "which vide
 4. **Type:** is it classification (a category) or regression (a number)?
 5. **What could go wrong?** One way bad or missing data could teach the wrong pattern.
 
-### My answers
+### My answers vs correct answers
 
-| Question | My answer |
-|---|---|
-| Task | |
-| Features | |
-| Label | |
-| Where the examples come from | |
-| Classification or regression? | |
-| What could go wrong? | |
+**Task:** Will it rain today?
+
+| Question | ✍️ My answer | Result | ✅ Correct answer |
+|---|---|---|---|
+| Features | The computer needs old data, at least 5 years of past years/months, to predict rain or not | ❌ Mistake | Humidity, temperature, air pressure, cloud cover, wind speed/direction, month/season, whether it rained yesterday |
+| Label | Yes or No (True or False) | ✅ Correct | Yes / No: did it actually rain that day? |
+| Where the examples come from | The data comes from the model or is fed into a database | 🟡 Partly right | Daily records from weather stations / the weather department (at least 5 years), *stored* in a database. The model learns from the data; it doesn't produce it |
+| Classification or regression? | Classification. Regression is numeric only, e.g. how much it rains | ✅ Correct | Classification (Yes/No). Predicting *how much* rain falls (in mm) would be regression |
+| What could go wrong? | (Mixed up rain data with fraud data) | ❌ Mistake | If the data only covers summer, or stormy days are missing because sensors broke, the model learns "it almost never rains" and misses real rainy days |
+
+### What I learned from my mistakes
+
+1. **Features vs examples.** "5 years of past data" is the **examples** (the rows). **Features** are the facts recorded about each example (the columns): humidity, temperature, pressure and so on. *Test:* if it can be a column in a table, it's a feature.
+2. **Data comes from the real world, not from the model.** Weather stations measure and record the data, a database stores it, and the model **learns from** it.
+3. **"% chance of rain" is still classification.** The model answers Yes/No and also says how confident it is. Only predicting an amount (like mm of rain) makes it regression.
+4. **Stay on one task.** "What could go wrong?" should be about the *same* task (rain), not a different one (fraud). Common data problems are:
+   - **Only one season:** the model never sees the monsoon.
+   - **Missing days:** the stormiest days are lost when sensors break.
+   - **Wrong labels:** rainy days marked "No".
+   - **Wrong place:** data from a different city.
 
 ## Go deeper (free)
 
