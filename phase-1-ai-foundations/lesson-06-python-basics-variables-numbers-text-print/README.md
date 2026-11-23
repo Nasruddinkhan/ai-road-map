@@ -2,7 +2,16 @@
 
 > **Why this matters:** Every AI program, from a tiny chart to ChatGPT's training code, is built from these same building blocks: storing values, doing maths on numbers, working with text and showing results. Learn them once and you'll use them in every lesson after this.
 
-📄 **Code for this lesson:** [`lesson_06_python_basics.py`](lesson_06_python_basics.py). Paste each section into its own cell in Google Colab (Lesson 5) and run it.
+### ▶️ Run this lesson's code
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Nasruddinkhan/ai-road-map/blob/main/phase-1-ai-foundations/lesson-06-python-basics-variables-numbers-text-print/lesson_06_python_basics.ipynb)
+
+| Way | How |
+|---|---|
+| **Google Colab** (easiest) | Click **Open in Colab** above, then **Runtime → Run all**. You can edit and re-run any cell. Use **File → Save a copy in Drive** to keep your changes. |
+| **View on GitHub** | Open [`lesson_06_python_basics.ipynb`](lesson_06_python_basics.ipynb). GitHub shows the code *and* its output (read-only). |
+| **GitHub Actions** | Go to the repo's **Actions** tab → **Run lesson code** → **Run workflow**, type `06`, and open the run to see the output. |
+| **Plain Python file** | [`lesson_06_python_basics.py`](lesson_06_python_basics.py): run with `python lesson_06_python_basics.py`. |
 
 ## The core idea
 

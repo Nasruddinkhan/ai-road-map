@@ -6,6 +6,10 @@ My 48-lesson journey from total beginner to building AI apps. Lessons arrive eve
 
 One folder per phase, one sub-folder per lesson. Each lesson folder has a `README.md` with the notes, and later on, the code (Python / Colab notebooks).
 
+### ▶️ Running the code
+
+Lessons with code have an **Open in Colab** button: click it to run the notebook in your browser, free, with nothing to install. You can also run every lesson's `.py` file on GitHub itself: **Actions** tab → **Run lesson code** → **Run workflow**.
+
 ### Phase 1: AI Foundations
 
 | # | Lesson | Status |

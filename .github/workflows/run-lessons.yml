@@ -1,0 +1,37 @@
+name: Run lesson code
+
+# Runs every lesson's Python file on GitHub's servers.
+# Start it by hand: Actions tab -> "Run lesson code" -> "Run workflow".
+# It also runs automatically when a .py file is pushed to main.
+on:
+  workflow_dispatch:
+    inputs:
+      lesson:
+        description: "Lesson number to run (e.g. 06). Leave empty to run all."
+        required: false
+        default: ""
+  push:
+    branches: [main]
+    paths: ["**/*.py"]
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run lesson files
+        env:
+          LESSON: ${{ github.event.inputs.lesson }}
+        run: |
+          pattern="lesson-${LESSON:-*}-*/*.py"
+          shopt -s nullglob
+          files=(phase-*/$pattern)
+          if [ ${#files[@]} -eq 0 ]; then echo "No Python files match lesson '$LESSON'"; exit 1; fi
+          for f in "${files[@]}"; do
+            echo "::group::▶ $f"
+            python "$f"
+            echo "::endgroup::"
+          done
