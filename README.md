@@ -15,7 +15,7 @@ One folder per phase, one sub-folder per lesson. Each lesson folder has a `READM
 | 3 | [Using AI tools well: prompting basics](phase-1-ai-foundations/lesson-03-using-ai-tools-well-prompting-basics/) | ✅ Done |
 | 4 | [Better prompting: roles, examples, step-by-step, checking answers](phase-1-ai-foundations/lesson-04-better-prompting-roles-examples-step-by-step-check/) | ✅ Done |
 | 5 | [Getting set up: Google Colab and running your first cell](phase-1-ai-foundations/lesson-05-getting-set-up-google-colab-and-running-your-first/) | ✅ Done |
-| 6 | [Python basics: variables, numbers, text, print](phase-1-ai-foundations/lesson-06-python-basics-variables-numbers-text-print/) | ⏳ Upcoming |
+| 6 | [Python basics: variables, numbers, text, print](phase-1-ai-foundations/lesson-06-python-basics-variables-numbers-text-print/) | 📖 In progress |
 
 ### Phase 2: Python for AI
 
